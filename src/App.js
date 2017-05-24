@@ -51,7 +51,7 @@ class App extends Component {
     const lastPostion = snake[snake.length - 1];
     const nextPosition = getNextPosition(currentDirection, newDirection, lastPostion);
     this.updateSnake(nextPosition);
-    this.setState({timer : this.state.timer+1});
+    this.setState({timer : this.state.timer + 1});
     // Checks if snake hits itself
     if ((new Set(snake)).size !== snake.length) {
       this.setState({ snake: [40],
@@ -59,7 +59,7 @@ class App extends Component {
                       currentDirection: 'right',
                       newDirection: 'right',
                       score : 0,
-                      timer: 0,
+                      timer: null,
                       message: 'GAME OVER !'
                     });
     }
@@ -110,7 +110,7 @@ class App extends Component {
         <div className='board'>
           <h1 className="white-text"> <i className="material-icons timerId">timer</i> {this.state.timer} &nbsp; &nbsp; Score: {this.state.score} &nbsp; <p className='red-text'> {this.state.message} </p> </h1>
           <Grid {...position} />
-          <a className="cyan darken-4 waves-effect waves-light board startBtn" onClick={this.startGame}>START</a>
+          <a className="cyan darken-4 waves-effect waves-light startBtn" onClick={this.startGame}>START</a>
         </div>
       </div>
     );
