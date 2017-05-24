@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 900px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.gameCell {
+  border: solid 5px rgba(0, 150, 136, 0.33);
+  height: 100px  !important;
+  width: 100px !important;
+  color: black !important;
+}
+.board{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 40%;
+}
+body{
+  background-color: #222;
+}
+.startBtn{
+  color: white !important;
+  height: 120px;
+  font-size: 80px;
+  width: 1000px;
+}
+
+.powerId{
+  font-size: 125px !important;
+}
+
+.timerId {
+   font-size : 50px !important;
+}
